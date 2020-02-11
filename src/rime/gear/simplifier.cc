@@ -17,12 +17,18 @@
 #include <rime/service.h>
 #include <rime/translation.h>
 #include <rime/gear/simplifier.h>
-#include <opencc/Config.hpp> // Place OpenCC #includes here to avoid VS2015 compilation errors
-#include <opencc/Converter.hpp>
-#include <opencc/Conversion.hpp>
-#include <opencc/ConversionChain.hpp>
-#include <opencc/Dict.hpp>
-#include <opencc/DictEntry.hpp>
+//#include <opencc/Config.hpp> // Place OpenCC #includes here to avoid VS2015 compilation errors
+//#include <opencc/Converter.hpp>
+//#include <opencc/Conversion.hpp>
+//#include <opencc/ConversionChain.hpp>
+//#include <opencc/Dict.hpp>
+//#include <opencc/DictEntry.hpp>
+#include <Config.hpp> // Place OpenCC #includes here to avoid VS2015 compilation errors
+#include <Converter.hpp>
+#include <Conversion.hpp>
+#include <ConversionChain.hpp>
+#include <Dict.hpp>
+#include <DictEntry.hpp>
 
 static const char* quote_left = "\xe3\x80\x94";  //"\xef\xbc\x88";
 static const char* quote_right = "\xe3\x80\x95";  //"\xef\xbc\x89";
