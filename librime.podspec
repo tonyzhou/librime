@@ -10,12 +10,14 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.prepare_command = <<-CMD
+    (cd thirdparty/src/glog/ && sh autogen.sh && sh configure)
     cp -f thirdparty/src/leveldb/util/logging.cc thirdparty/src/leveldb/util/leveldb_logging.cc
     cp -f src/rime/algo/utilities.cc src/rime/algo/rime_utilities.cc
   CMD
 
   s.requires_arc = true
   s.libraries = 'c++'
+  s.public_header_files = 'src/*.h'
   s.preserve_path = [
     'src',
     'thirdparty/include',
